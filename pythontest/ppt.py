@@ -1,8 +1,9 @@
 from random import choice
-maqesc=choice(['pedra','papel','tesoura'])
-escolha=str(input('\033[1;30;107mBEM VINDO AO JOKENPÔ CONTRA A MÁQUINA\033[m\n'
-                  'Escolha pedra, papel ou tesoura:'))
+resp = "s"
 while (resp == "S" or resp == "s"):
+    maqesc=choice(['pedra','papel','tesoura'])
+    escolha=str(input('\n\n\033[1;30;107mBEM VINDO AO JOKENPÔ CONTRA A MÁQUINA\033[m\n'
+                'Escolha pedra, papel ou tesoura:'))
     if maqesc == escolha:
         print(f'A máquina escolheu {maqesc} e você escolheu {escolha}, portanto foi \033[1;33mempate\033[m.')
     elif maqesc == 'pedra' and escolha == 'tesoura' or maqesc == 'papel' and escolha == 'pedra' or maqesc == 'tesoura' and escolha == 'papel':
