@@ -7,6 +7,7 @@ def sequencia(n):
 n=int(input("Digite uma posição da sequência:"))
 result = sequencia(n)
 print("Essa é a sua sequência: ",result)
+print("alteração")
 
 
 
